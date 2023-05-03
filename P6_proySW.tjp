@@ -168,11 +168,6 @@ task WMGame "Web & Mobile Game" {
       effort 15d
       allocate dev4, dev1
       depends WMGame.tandF.tGUIa
-      journalentry 2023-04-08 "Problema con bibliotecas obsoletas"{
-        author dev1
-        alert yellow
-        summary "Las bibliotecas añadidas en la función de reproducción de sonido están obsoletas. Se necesita buscar bibliotecas actuales."
-      } 
     } 
     task tFEat "Android Front End Test" {
       effort 6d
