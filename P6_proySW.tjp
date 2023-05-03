@@ -277,6 +277,11 @@ textreport frame "" {
     formats html
     center '<[report id="overview"]>'
   }
+  
+    textreport overvi2 "Overview2" {
+    formats html
+    center '<[report id="informe"]>'
+  }
 
   textreport "Status" {
     formats html
@@ -325,7 +330,7 @@ taskreport overview "" {
 }
 
 # A traditional Gantt chart with a project overview.
-taskreport overview "" {
+taskreport informe "" {
   scenarios actual
   headline "Current Project Plan"
   columns bsi { title 'WBS' },
