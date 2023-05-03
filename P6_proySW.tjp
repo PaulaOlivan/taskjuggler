@@ -315,7 +315,7 @@ textreport frame "" {
 # A traditional Gantt chart with a project start overview.
 taskreport overview "" {
   scenarios 
-  headline "Initial Project Plan"
+  headline "Current Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
           revenue, chart { ${TaskTip} }
@@ -331,7 +331,7 @@ taskreport overview "" {
 # A traditional Gantt chart with a project overview.
 taskreport informe "" {
   scenarios actual
-  headline "Current Project Plan"
+  headline "Informe Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
           revenue, chart { ${TaskTip} }
