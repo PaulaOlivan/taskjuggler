@@ -308,6 +308,22 @@ textreport frame "" {
   }
 }
 
+# A traditional Gantt chart with a project start overview.
+taskreport overview "" {
+  scenarios 
+  headline "Initial Project Plan"
+  columns bsi { title 'WBS' },
+          name, start, end, effort, cost,
+          revenue, chart { ${TaskTip} }
+  # For this report we like to have the abbreviated weekday in front
+  # of the date. %a is the tag for this.
+  timeformat "%a %Y-%m-%d"
+  loadunit days
+  hideresource @all
+  balance cost rev
+  caption 'All effort values are in man days.'
+}
+
 # A traditional Gantt chart with a project overview.
 taskreport overview "" {
   scenarios actual
@@ -318,6 +334,7 @@ taskreport overview "" {
   # For this report we like to have the abbreviated weekday in front
   # of the date. %a is the tag for this.
   timeformat "%a %Y-%m-%d"
+  date 2023-03-15
   loadunit days
   hideresource @all
   balance cost rev
