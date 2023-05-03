@@ -189,7 +189,6 @@ task WMGame "Web & Mobile Game" {
     task tBEst "Evaluación y Decisión de la nube" {
       effort 2d
       allocate dev3
-      depends WMGame.tback.tBEcl
     }
     task tBEde "Back End Cloud Deployment" {
       effort 3d
