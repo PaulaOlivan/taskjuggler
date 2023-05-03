@@ -158,7 +158,7 @@ task WMGame "Web & Mobile Game" {
     task tGUIa "Android GUI Design" {
       effort 7d
       allocate dev4
-      journalentry 2023-04-07 "Problema al exportar el diseño" {
+      journalentry 2023-05-03 "Problema al exportar el diseño" {
         author dev4
         alert yellow
         summary "El diseño no se exporta correctamente. Por el momento se necesita que todos los miembros instalen la herramienta."
