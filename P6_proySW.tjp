@@ -314,7 +314,7 @@ textreport frame "" {
 
 # A traditional Gantt chart with a project start overview.
 taskreport overview "" {
-  scenarios 
+  scenario actual
   headline "Current Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
@@ -330,7 +330,7 @@ taskreport overview "" {
 
 # A traditional Gantt chart with a project overview.
 taskreport informe "" {
-  scenarios actual
+  scenario plan
   headline "Informe Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
