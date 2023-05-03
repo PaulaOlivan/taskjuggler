@@ -338,7 +338,6 @@ taskreport informe "" {
   # For this report we like to have the abbreviated weekday in front
   # of the date. %a is the tag for this.
   timeformat "%a %Y-%m-%d"
-  date 2023-03-16
   loadunit days
   hideresource @all
   balance cost rev
