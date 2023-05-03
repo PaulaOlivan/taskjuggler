@@ -162,6 +162,7 @@ task WMGame "Web & Mobile Game" {
         author dev4
         alert yellow
         summary "El diseño no se exporta correctamente. Por el momento se necesita que todos los miembros instalen la herramienta."
+      }
     }
     task tFEa "Android Front End Construction" {
       effort 15d
